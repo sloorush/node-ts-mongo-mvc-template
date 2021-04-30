@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
-import path from "path";
+
+import { connect } from "./database/database";
 
 process.on("uncaughtException", (e) => {
   console.log(e);
@@ -17,6 +18,8 @@ app.use(
   })
 );
 app.use(express.json());
+
+connect();
 
 app.get("/", (req, res) => {
   res.send("Focus <3<br> We are up and aware and caring for you!");

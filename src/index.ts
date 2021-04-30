@@ -4,11 +4,11 @@ dotenv.config();
 
 import app from "./app";
 
-declare module "express" {
-  export interface Request {
-    user?: any;
-  }
-}
+// declare module "express" {
+//   export interface Request {
+//     user?: any;
+//   }
+// }
 
 const port = process.env.PORT || "8000";
 
