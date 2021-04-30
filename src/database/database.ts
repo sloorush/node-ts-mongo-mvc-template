@@ -1,5 +1,5 @@
-import Mongoose from "mongoose";
-// import { UserModel } from "./users/users.model";
+import * as Mongoose from "mongoose";
+import { UserModel } from "./users/users.model";
 
 import * as dotenv from "dotenv";
 
@@ -7,7 +7,7 @@ dotenv.config();
 
 let database: Mongoose.Connection;
 
-console.log("db.ts chala");
+console.log("Attempting db connection");
 
 export const connect = () => {
   const uri: string = process.env.DB_URL ?? "gg";
