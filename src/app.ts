@@ -2,6 +2,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 
 import { connect } from "./database/database";
+import userRouter from "./routes/user.router";
 
 process.on("uncaughtException", (e) => {
   console.log(e);
@@ -25,6 +26,6 @@ app.get("/", (req, res) => {
   res.send("Focus <3<br> We are up and aware and caring for you!");
 });
 
-// app.use("/user", userRouter);
+app.use("/user", userRouter);
 
 export default app;
