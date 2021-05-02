@@ -23,7 +23,7 @@ app.use(express.json());
 connect();
 
 app.get("/", (req, res) => {
-  res.send("Focus <3<br> We are up and aware and caring for you!");
+  res.send("Issa Template");
 });
 
 app.use("/user", userRouter);

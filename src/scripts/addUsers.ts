@@ -3,7 +3,7 @@ import { connect, disconnect } from "../database/database";
 
 (async () => {
   connect();
-  const users = [{ name: "Emma", email: "aarush.bhatt@gmail.com" }];
+  const users = [{ name: "lorem", email: "ipsum@gmail.com" }];
   try {
     for (const user of users) {
       await UserModel.create(user);
