@@ -1,9 +1,9 @@
 {
-  "name": "yugen-backend",
+  "name": "node-ts-mvc-mongo-template",
   "version": "1.0.0",
-  "description": "focus",
+  "description": "template repo",
   "main": "index.js",
-  "repository": "git@github.com:r-ush/yugen-backend.git",
+  "repository": "git@github.com:r-ush/node-ts-mongo-template.git",
   "author": "r-ush <aarush.bhatt@gmail.com>",
   "license": "MIT",
   "scripts": {
